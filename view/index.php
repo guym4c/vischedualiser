@@ -128,7 +128,7 @@ function getProcess($lines, $start) {
 			<div class="cpu">
 				<?php foreach($events as $event): ?>
 					<div 
-						<?php if(empty($_GET['realistic']) && $event['process'] != 'null'):?> 
+						<?php if(empty($_GET['realistic']) && trim($event['process']) != 'null'):?> 
 							class="unrealistic" 
 						<?php endif; ?> 
 						style="width: <?php echo $event['duration']; ?>px;">
