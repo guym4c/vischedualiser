@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76719847-6"></script>
+		<script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'UA-76719847-6');
+		</script>
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>
+			window.addEventListener("load", function(){
+				window.cookieconsent.initialise({
+				    "palette": {
+			  			"popup": {
+			    			"background": "#000"
+				    	},
+				    	"button": {
+				        	"background": "#aaa"
+				    	}
+					},
+					"theme": "edgeless"
+				});
+			});
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet" type="text/css">
+		<title>Vischedualise</title>
+		<style>
+
+			body {
+				margin: 25px;
+				font-family: "Fira Mono", monospace;
+			}
+
+			textarea {
+				resize: vertical;
+				font-family: inherit;
+				width: 100%;
+				height: 80vh;
+			}
+
+			input[type=submit] {
+				font-family: inherit;
+			}
+
+			.credit {
+				color: #999;
+			}
+
+			a {
+				color: inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="/view/" method="post" enctype="multipart/form-data">
+			<textarea name="command" rows="10" placeholder="Command output"></textarea>
+			<input type="submit" value="Vischedualise">
+			<p>We do not store data entered here. #NoCollude</p>
+			<p class="credit">by <a href="//guymac.eu">Guy Mac</a> &middot; <a href="#">GitHub</a></p>
+		</form>
+	</body>
+</html>
+
