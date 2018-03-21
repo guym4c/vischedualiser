@@ -6,6 +6,9 @@ This is very quick'n'dirty. Please excuse the code. And it doesn't really like a
 ### POST /view
 Post the command output as `command` and receive back a nicely formatted CPU timeline.
 
+### POST /view/?realistic
+As above but default to realistic timeline block width with no minimum value. 
+
 ### POST /view/?debug
 Post the command output as `command` and receive unformatted scheduler events.
 
