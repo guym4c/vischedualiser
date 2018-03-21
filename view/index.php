@@ -36,6 +36,11 @@ function printEvent($e) {
 	return $e['time'] . 'ms: ' . $e['event'] . ' on ' . $e['acting-on'] . '; ' . $e['process'] . ' scheduled';
 }
 
+if (isset($_GET['json'])) {
+	echo json_encode($events);
+	exit;
+}
+
 ?>
 
 
